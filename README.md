@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-- Graphcool CLI (sign up here then run npm install -g graphcool to install the CLI)
+- Graphcool CLI (sign up then run npm install -g graphcool to install the CLI)
 - $ yarn install
 - $ yarn start
 

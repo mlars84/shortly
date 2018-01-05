@@ -18,16 +18,16 @@ const ALL_LINKS_QUERY = gql`
 class LinkList extends Component {
     render() {
         if (this.props.allLinksQuery && this.props.allLinksQuery.loading) {
-            return <div>Loading ...</div>;
+            return <div>Loading . . .</div>;
         }
-
+        console.log(this.props.allLinksQuery)
         if (this.props.allLinksQuery && this.props.allLinksQuery.error) {
             return <div>Error occurred</div>;
         }
 
         const allLinks = this.props.allLinksQuery.allLinks;
         if (allLinks.length === 0) {
-            return <div>No links...</div>;
+            return <div>No links . . .</div>;
         }
 
         return (
